@@ -1,0 +1,208 @@
+/* css global */
+body{
+
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 16px;
+}
+*{
+
+    box-sizing: border-box;
+}
+.header{
+    background-color: white;
+    height: 70px; 
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    top:0px;
+    left: 0px;
+    z-index: 3;
+}
+.header-logo img{
+    width: 60px;
+
+}
+.header-nav ul li{
+    display: inline;
+    margin: 0 15px;
+}
+.header-nav ul li a{
+    color: black;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+.header-login{
+    color: #999;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.header-login i{
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+.header-nav ul li a:hover{
+    color: #fa5238;
+}
+.header-nav ul li.active a{
+    color: #fa5238
+
+}
+#carousel img{
+    width: 100%;
+    z-index: 0;
+    height: 600px;
+
+}
+#carousel{
+    margin-top: 70px;
+}
+.section-title{
+
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+}
+.section-title span{
+
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+.section-title span:hover{
+    color: #fa5238;
+}
+.section-title span.active{
+    color: #fa5238;
+
+}
+.movie-content{
+    padding: 0 10%;
+}
+.movie-item img{
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+.movie-item p{
+    font-size: 1.4rem;
+    
+}
+.movie-item .btn-read-more{
+    background-color: #fa5238;
+    color: white;
+    padding: 0.7rem 0;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+    display: none;
+}
+#movie .owl-prev{
+    position: absolute;
+    top:30%;
+    left: -3rem;
+
+}
+#movie .owl-prev span{
+
+    font-size: 6rem;
+}
+
+#movie .owl-next{
+    position: absolute;
+    top:30%;
+    right: -3rem;
+
+}
+#movie .owl-next span{
+
+    font-size: 6rem;
+}
+.movie-item:hover .btn-read-more{
+    display: block;
+    margin-top: 10px;
+}
+.movie-item:hover p{
+    display: none; 
+}
+.news-content{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-auto-rows: minmax(270px,auto);
+    padding: 0 10%;
+    grid-gap: 10px;
+}
+.news-content a{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/* customize hover effect */
+
+.news-content .grid{
+
+    padding: 0;
+
+}
+.news-content .grid figure{
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+}
+.news-content figure.effect-ruby p{
+    padding: 1rem;
+}
+.contact .section-title{
+    color: white;
+}
+.contact-form{
+    background-color: white;
+
+}
+.contact-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 0 20%;
+}
+.contact{
+    background-image: url('../img/hinhnen1.jpg');
+    /* background: no-repeat; */
+    /* background: center center; */
+    background-size: cover;
+    /* backgroud không thây đổi vị trí */
+    /* backgroud paralax */
+    background-attachment: fixed;
+}
+.contact-form h2{
+    text-align: center;
+}
+.contact-form .input__field--hoshi{
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+.input__label--hoshi-color-1::after{
+    color: #fa5238;
+    border-bottom: 2px solid #fa5238;
+}
+.contact-content .contact-form{
+
+    text-align: center;
+}
+.btn-contact{
+    background-color: #fa5238;
+    border: none;
+    color: white;
+    padding: 0.7rem 2rem;
+    border-radius: 5px;
+}
